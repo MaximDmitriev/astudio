@@ -1,0 +1,127 @@
+.footer {
+  background-color: #f1f1f1;
+  padding: 30px 0;
+  &__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 1199px) {
+      flex-direction: column;
+    }
+  }
+  &__menu {
+    display: flex;
+    margin-bottom: 30px;
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__menu-title {
+    margin-right: 47px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 14.41px;
+    color: $title-color;
+    @media (max-width: 1199px) {
+      width: 100%;
+      flex-shrink: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__menu-item {
+    margin-right: 28px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    color: $link-color;
+    border-bottom: 1px solid currentColor;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__social-block {
+    display: flex;
+    @media (max-width: 1199px) {
+      margin-bottom: 15px;
+    }
+  }
+  &__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #a8a9a9;
+    transition: 0.6s;
+    &:hover {
+      background: $link-color;
+    }
+  }
+  &__note {
+    margin-left: 18px;
+    font-size: 11px;
+    letter-spacing: 0.55px;
+    font-weight: 300;
+    color: #a8a8a8;
+    @media (max-width: 1199px) {
+      margin-left: 0;
+    }
+  }
+  &__form {
+    margin: -80px 0 -30px 0;
+    padding: 20px 20px 30px 20px;
+    align-self: flex-end;
+    background: #d1ebc1;
+    flex: none;
+    @media (max-width: 1199px) {
+      height: calc(100% + 90px);
+      margin: 0 0 -30px 0;
+    }
+  }
+  &__btn {
+    width: 182px;
+    height: 30px;
+    border: 1px solid $link-color;
+    background: transparent;
+    color: $link-color;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.6s;
+    &:hover {
+      color: #ffffff;
+      background: $link-color;
+    }
+  }
+  &__link-group, &__contact-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px 0 10px;
+  }
+  &__link-item {
+    margin-top: 3px;
+    color: $title-color;
+    line-height: 23.99px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    &:hover {
+      text-decoration: none;
+    }
+    &_dashed {
+      display: inline-block;
+      border-bottom: 1px dashed currentColor;
+    }
+    &__contact-item {
+      color: #a8a8a8;
+      text-decoration: none;
+      &_line {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.form {
+  padding: 190px 0 80px 0;
+  @media (max-width: 1599px) {
+    padding: 150px 0 65px 0;
+  }
+  @media (max-width: 1199px) {
+    padding: 100px 0 45px 0;
+  }
+  &__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 1599px) {
+      padding: 0 45px;
+    }
+  }
+  &__content {
+    width: 55%;
+  }
+  &__content-title {
+    font-size: 77px;
+    font-weight: 700;
+    line-height: 77.08px;
+    color: #515151;
+    @media (max-width: 1599px) {
+      font-size: 70px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 45px;
+    }
+  }
+  &__content-text {
+    font-size: 77px;
+    font-weight: 400;
+    line-height: 70px;
+    color: $link-color;
+    @media (max-width: 1599px) {
+      font-size: 70px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 45px;
+      line-height: 45px;
+    }
+  }
+  &__content-phone {
+    margin-top: 70px;
+    font-size: 42px;
+    color: #74be46;
+    @media (max-width: 1599px) {
+      font-size: 38px;
+    }
+    @media (max-width: 1199px) {
+      margin-top: 145px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20px;
+  }
+  &__input {
+    width: 327px;
+    height: 43px;
+    padding: 0 18px;
+    margin-bottom: 18px;
+    border: 2px solid #a0a0a0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20.53px;
+    &_big {
+      height: 124px;
+      padding: 9px 18px;
+      resize: none;
+    }
+    &_upload {
+      display: none;
+    }
+  }
+  &__upload-label {
+    cursor: pointer;
+    .upload {
+      transition: 0.4s;
+    }
+    &:hover {
+      .upload {
+        transition: 0.4s;
+        stroke: #762b86;
+      }
+    }
+  }
+  &__btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin-bottom: 14px;
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 239px;
+    height: 58px;
+    padding-bottom: 4px;
+    background-color: #74bf46;  
+    color: #ffffff;  
+    line-height: 26.05px;
+    font-size: 30px;
+    transition: 0.4s;
+    &:hover {
+      background-color: #762b86;
+    }
+  }
+  &__note {
+    width: 327px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 15px;
+    color: #a2a2a1;
+
+  }
+}

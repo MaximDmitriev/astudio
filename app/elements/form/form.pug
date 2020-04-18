@@ -1,0 +1,16 @@
+.form.section
+    ._wrap.wrap
+        ._content
+            h2._content-title Есть вопросы —
+            ._content-text свяжитесь <br> с нами
+            ._content-phone +7 (383) 207-55-18
+        ._container
+            input(type="text" name="name" placeholder="имя")._input
+            input(type="text" name="phone" placeholder="телефон")._input
+            textarea(name="msg" placeholder="сообщение")._input.-big
+            ._btn-group
+                ._btn отправить
+                label(for="file")._upload-label
+                    input(type="file" name="file" id="file")._input.-upload
+                    +svg('folder', 'upload')
+            ._note Вы можете прикрепить любые материалы, которые помогут нам в проекте

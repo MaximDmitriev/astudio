@@ -1,0 +1,317 @@
+.about {
+  padding: 135px 0;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 1599px) {
+    padding: 108px 0;
+  }
+  @media (max-width: 1199px) {
+    padding: 85px 0;
+  }
+  &__wrap {
+    width: 100%;
+    height: 551px;
+    padding: 0 0 0 19.84%;
+    background-color: #a4ffc2;
+    flex-direction: row;
+    @media (max-width: 1599px) {
+      padding: 0 0 0 13%;
+      height: calc(551px * 0.8);
+    }
+    @media (max-width: 1199px) {
+      padding: 0 0 0 8%;
+      height: calc(551px * 0.6);
+    }
+  }
+  &__image {
+    position: relative;
+    object-fit: cover;
+    opacity: 0;
+    flex-shrink: 0;
+    &_i5 {
+      object-position: left;
+      height: 341px;
+      @media (max-width: 1599px) {
+        height: calc(341px * 0.8);
+      }
+      @media (max-width: 1199px) {
+        height: calc(341px * 0.6);
+      }
+    }
+    &_i3 {
+      opacity: 1;
+    }
+  }
+  &__img-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-item {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-end;
+    &_i1 {
+      position: absolute;
+      width: 235px;
+      height: 270px;
+      top: -60px;
+      right: 0;
+      background-color: #762b86;
+      align-self: flex-start;
+      justify-content: center;
+      @media (max-width: 1599px) {
+        width: 188px;
+        height: calc(270px * 0.8);
+        top: -54px;
+      }
+      @media (max-width: 1199px) {
+        width: 141px;
+        height: calc(270px * 0.6);
+        top: -33px;
+      }
+    }
+    &_i2 {
+      position: relative;
+      justify-content: center;
+      background-color: #531f77;
+      width: 360px;
+      height: 551px;
+      @media (max-width: 1599px) {
+        width: 288px;
+        height: calc(551px * 0.8);
+      }
+      @media (max-width: 1199px) {
+        width: 216px;
+        height: calc(551px * 0.6);
+      }
+    }
+    &_i3 {
+      width: 422px;
+      height: 210px;
+      background-color: #f128c1;
+      z-index: 1;
+      @media (max-width: 1599px) {
+        width: 338px;
+        height: calc(210px * 0.8);
+      }
+      @media (max-width: 1199px) {
+        width: 253px;
+        height: calc(210px * 0.6);
+      }
+    }
+    &_i4 {
+      width: 422px;
+      height: 438px;
+      background-color: #99d194;
+      @media (max-width: 1599px) {
+        width: 338px;
+        height: calc(438px * 0.8);
+      }
+      @media (max-width: 1199px) {
+        width: 253px;
+        height: calc(438px * 0.6);
+      }
+    }
+    &_i5 {
+      flex-shrink: unset;
+      height: 341px;
+      background-color: #0e779e;
+      @media (max-width: 1599px) {
+         height: calc(341px * 0.8);
+      }
+      @media (max-width: 1199px) {
+        height: calc(341px * 0.6);
+      }
+    }
+    &_i6 {
+      flex-shrink: unset;
+      height: 211px;
+      @media (max-width: 1199px) {
+        height: calc(211px * 0.6);
+      }
+    }
+  }
+  &__img-text {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 339px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    @media (max-width: 1599px) {
+      font-size: 18px;
+      top: 271px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      top: 200px;
+    } 
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      width: 180px;
+      height: 180px;
+      background-color: #f128c1;
+      transform: rotateZ(45deg);
+      @media (max-width: 1599px) {
+        width: 144px;
+        height: 144px;
+      }
+      @media (max-width: 1199px) {
+        width: 108px;
+        height: 108px;
+      } 
+    }
+    &_circle {
+      top: 136px;
+      left: 37px;
+      font-size: 23px;
+      @media (max-width: 1599px) {
+        font-size: 21px;
+        top: 109px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 18px;
+        top: 70px;
+        left: 20px;
+      } 
+      &::before {
+        width: 250px;
+        height: 250px;
+        background-color: #a8a8fc;
+        border-radius: 50%;   
+        @media (max-width: 1599px) {
+          width: 200px;
+          height: 200px;
+        }
+        @media (max-width: 1199px) {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+  &__content {
+    position: absolute;
+    padding: 0 35px 30px 35px;
+    line-height: 1;
+    @media (max-width: 1599px) {
+      padding: 0 28px 24px 28px;
+    }
+    @media (max-width: 1199px) {
+      padding: 0 10px 10px 10px;
+    } 
+    &_i6 {
+      padding: 0 35px 60px 54px;
+      @media (max-width: 1199px) {
+        padding: 0 10px 10px 15px;
+      } 
+    }
+  }
+  &__content-num {
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 700;
+    @media (max-width: 1599px) {
+      font-size: 52px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 46px;
+    } 
+    &_big {
+      font-size: 81px;
+      @media (max-width: 1599px) {
+        font-size: 65px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 56px;
+      } 
+    }
+    &_vbig {
+      font-size: 118px;
+      @media (max-width: 1599px) {
+        font-size: 95px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 88px;
+      } 
+    }
+  }
+  &__content-text {
+    color: #ffffff;
+    font-size: 19px;
+    @media (max-width: 1599px) {
+      font-size: 16px;
+    }
+    @media (max-width: 1199px) {
+      font-size: 14px;
+    } 
+    &_big {
+      font-size: 43px;
+      @media (max-width: 1599px) {
+        font-size: 35px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 28px;
+      } 
+    }
+    &_vbig {
+      font-size: 43px;
+      @media (max-width: 1599px) {
+        font-size: 35px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 28px;
+      } 
+    }
+  }
+}
+
+.show1 {
+  animation: show1 8s ease-in-out infinite;
+}
+.show2{
+  animation: show2 8s ease-in-out infinite;
+}
+.show3 {
+  animation: show3 8s ease-in-out infinite;
+}
+.show4 {
+  animation: show4 8s ease-in-out infinite;
+}
+@keyframes show1 {
+  from {opacity: 0;}
+  8% {opacity: 1;}
+  16% {opacity: 1;}
+  36% {opacity: 0;}
+  to {opacity: 0;}
+}
+@keyframes show2 {
+  from {opacity: 0;}
+  12% {opacity: 0;}
+  25% {opacity: 1;}
+  75% {opacity: 1;}
+  86% {opacity: 0;}
+  to {opacity: 0;}
+}
+@keyframes show3 {
+  from {opacity: 0;}
+  22% {opacity: 0;}
+  36% {opacity: 1;}
+  80% {opacity: 1;}
+  to {opacity: 0;}
+}
+@keyframes show4 {
+  from {opacity: 0;}
+  30% {opacity: 0;}
+  42% {opacity: 1;}
+  95% {opacity: 1;}
+  to {opacity: 0;}
+}

@@ -1,0 +1,105 @@
+.product-demo-description {
+  background: #5fb00c;
+  padding: 100px 0 50px 0;
+  $root: &;
+  @media(max-width: 749px) {
+      padding: 50px 0;
+  }
+  &__wrap {
+    flex-direction: column;
+  }
+  &__img {
+    flex: none;
+    @media(max-width: 1199px) {
+      width: 300px;
+    }
+    @media(max-width: 991px) {
+      width: 160px;
+    }
+    @media(max-width: 749px) {
+      width: 100px;
+    }
+    @media(max-width: 479px) {
+      display: none;
+    }
+  }
+  &__group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media(max-width: 749px) {
+      align-items: center;
+    }
+    &_second {
+      margin-top: -270px;
+      @media(max-width: 1199px) {
+        margin-top: -120px;
+      }
+      @media(max-width: 991px) {
+        margin-top: 30px;
+      }
+      #{$root} {
+        &__img {
+          order: 1;
+        }
+        &__text-box {
+          padding-top: 320px;
+          padding-left: 0;
+          padding-right: 80px;
+          @media(max-width: 1199px) {
+            padding-top: 160px;
+          }
+          @media(max-width: 991px) {
+            padding-top: 20px;
+            padding-right: 40px;
+          }
+          @media(max-width: 479px) {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+  &__text-box {
+    padding-top: 115px;
+    padding-left: 80px;
+    @media(max-width: 1199px) {
+      padding-top: 30px;
+    }
+    @media(max-width: 991px) {
+      padding-left: 40px;
+    }
+    @media(max-width: 749px) {
+      padding-left: 20px;
+    }
+    @media(max-width: 479px) {
+      padding-left: 0;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    @media(max-width: 991px) {
+      font-size: 28px;
+    }
+    @media(max-width: 749px) {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 25px;
+    color: #fff;
+    @media(max-width: 1199px) {
+      font-size: 22px;
+    }
+    @media(max-width: 991px) {
+      font-size: 18px;
+    }
+    @media(max-width: 749px) {
+      font-size: 16px;
+    }
+  }
+}

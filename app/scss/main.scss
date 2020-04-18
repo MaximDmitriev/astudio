@@ -1,0 +1,107 @@
+@import "_fonts";
+@import "_mixins";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  min-width: 800px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: $base-font;
+  border: none;
+  &:focus, &:active {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  &__title {
+    font-size: 50px;
+    font-weight: 300;
+    color: $title-color;
+    margin-bottom: 60px;
+    @media (max-width: 1199px) {
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1170px;
+  padding: 0 15px;
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
+.product-demo-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background: #f4ba00;
+  width: 100%;
+  &__img {
+    max-width: 80%;
+  }
+}
+
+[data-slider="parlo-italiano-slider"] {
+  .swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@import "icons";
+
+@import "../elements/header/header";
+@import "../elements/main-slider/main-slider";
+@import "../elements/about/about";
+@import "../elements/offers/offers";
+@import "../elements/info/info";
+@import "../elements/portfolio/portfolio";
+@import "../elements/feedback/feedback";
+@import "../elements/form/form";
+@import "../elements/blog/blog";
+@import "../elements/footer/footer";
+
+// parloitaliano
+@import "../elements/parlo-italiano/product-demo-description/product-demo-description";
+@import "../elements/parlo-italiano/product-demo-head/product-demo-head";
+@import "../elements/parlo-italiano/product-demo-embargo/product-demo-embargo";
+@import "../elements/parlo-italiano/product-demo-review/product-demo-review";

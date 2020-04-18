@@ -1,0 +1,126 @@
+.icon {
+  display: inline-block;
+  &.example-png-icon {
+    background: url(img/icons/example.png);
+    width: 30px;
+    height: 30px;
+  }
+  &-example-svg-icon {
+    width: 30px;
+    height: 30px;
+    fill: red;
+  }
+  &-eye {
+    width: 16px;
+    height: 14px;
+    fill: #ffffff;
+  }
+  &-close {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+  &-folder {
+    width: 71px;
+    height: 58px;
+    // fill: #74be46;
+    fill: none;
+    stroke: #74be46;
+    stroke-width: 8;
+  }
+  &-facebook {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  &-behance {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  &-google-plus {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  &-instagram {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  &-vk {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  &.eye {
+    background: url(img/icons/eye.png);
+    width: 16px;
+    height: 12px;
+  }
+  &.close {
+    background: url(img/icons/close.png);
+    width: 29px;
+    height: 29px;
+  }
+
+  &-map-marker {
+    width: 243px;
+    height: 141px;
+    fill: #5cad09;
+    flex: none;
+    @media(max-width: 1199px) {
+      width: 243*0.7px;
+      height: 141*0.7px;
+    }
+    @media(max-width: 749px) {
+      width: 243*0.3px;
+      height: 141*0.3px;
+    }
+    @media(max-width: 479px) {
+      width: 243*0.5px;
+      height: 141*0.5px;
+    }
+  }
+  &-store {
+    width: 237px;
+    height: 157px;
+    fill: #5cad09;
+    @media(max-width: 1199px) {
+      width: 237*0.7px;
+      height: 157*0.7px;
+    }
+    @media(max-width: 749px) {
+      width: 237*0.3px;
+      height: 157*0.3px;
+    }
+    @media(max-width: 479px) {
+      width: 237*0.5px;
+      height: 157*0.5px;
+    }
+  }
+  &-growth {
+    width: 237px;
+    height: 176px;
+    fill: #5cad09;
+    stroke: #5cad09;
+    stroke-width: 19;
+    @media(max-width: 1199px) {
+      width: 237*0.7px;
+      height: 176*0.7px;
+    }
+    @media(max-width: 749px) {
+      width: 237*0.3px;
+      height: 176*0.3px;
+    }
+    @media(max-width: 479px) {
+      width: 237*0.5px;
+      height: 176*0.5px;
+    }
+  }
+  &-chevron-down {
+    width: 34px;
+    height: 34px;
+    fill: #a8a9a9;
+  }
+}
